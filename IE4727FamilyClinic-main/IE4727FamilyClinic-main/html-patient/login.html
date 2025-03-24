@@ -1,0 +1,61 @@
+<!-- not in use -->
+ <!-- using login.php -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Family Clinic</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+</head>
+
+<body class="container">
+    <section style="margin-top: 100px">
+        <div class="card-registration-layout">
+            <form method="POST" action="../php/login.php">
+                <div class="card-registration">
+                    <div>
+                        <h2 class="h2-no-margin">Login</h2>
+                        <p>
+                            Don't have an account?
+                            <a href="../html-patient/signup.html">Sign up</a>
+                        </p>
+                    </div>
+                    <div class="display-flex flex-direction-column gap-24" id="form-registration" style="width: 100%;">
+                        <div class="flex-grow-shrink">
+                            <label for="form-email">
+                                <p>Email</p>
+                            </label>
+                            <input type="text" id="form-email" name="email" class="input-style" placeholder="Johntan@gmail.com">
+                        </div>
+                        <div class="display-flex gap-16 flex-grow-shrink">
+                            <div class="flex-grow-shrink">
+                                <label for="password">
+                                    <p>Password</p>
+                                </label>
+                                <input type="text" id="password" name="password" class="input-style" placeholder="********">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn-blue-lg" value="Log in">
+                </div>
+            </form>
+        </div>
+        <div style="margin-bottom: 100px;"></div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>

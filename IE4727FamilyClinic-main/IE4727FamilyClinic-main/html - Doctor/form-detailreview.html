@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Family Clinic</title>
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body class="container">
+        <section style="margin-top: 100px;">
+            <div class="two-section">
+                <div class="left-col">
+                    <ol class="stepper">
+                        <li class="stepper-done"></li>
+                        <li class="stepper-active"></li>
+                        <li></li>
+                     </ol>
+                    <h2>Review your details</h2>
+
+                    <p class="text-mediumgrey">Here are the available slots for:</p>
+
+                    <div class="card display-flex gap-24">
+                        
+                        <img src="images/doctor-profilepic.svg" aria-label="doctor profile picture">
+                      
+                        <div>
+                            <p>
+                                <span class="h4 text-darkblue font-bold"> Dr Jerry Lim </span> <br />
+                                <span class="text-mediumgrey">Family Physician</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card">
+                        <div class="display-flex gap-12">
+                            <img src="images/icon-schedule.svg" aria-label="doctor profile picture">
+                            <p >Appointment Details</p>
+                        </div>
+
+                        <div class="padding-2"></div>
+
+                        <div class="grid-container-2">
+                            <p style="margin-top:0;">When</p>
+                            <p class="font-bold text-mediumgrey" style="margin-top:0;">
+                                <span> 01 September 2024 </span> <br/>
+                                <span>08:30AM</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-col">
+                    <div class="right-col-width">
+                        <form id="form-reviewdetails">
+                            <h4 class="font-bold">Patient Details</h4>
+    
+                            <label for="fullname"><p>Full Name</p></label>
+                            <input type="text" id="fullname" class="input-style" placeholder="Your full name">
+                            <label for="form-NRIC"><p>NRIC/FIN</p></label>
+                            <input type="text" class="input-style input-readonly" id="form-NRIC" readonly>
+                            <label for="form-email"><p>Contact Email</p></label>
+                            <p class="small-text text-mediumgrey">Appointment confirmation and reminders will be sent to this email.</p>
+                            <input type="text" id="form-email" class="input-style input-readonly" readonly>
+    
+                            <hr class="hr-styles">
+    
+                            <h4>Appointment Type</h4>
+                            
+                            <div>
+                                <select class="input-style">
+                                    <option disabled selected hidden>Select type of consultation</option>
+                                    <option value="General Consultation">General Consultation</option>
+                                    <option value="Health Screening & Preventive Care">Health Screening & Preventive Care (routine check-ups, vaccinations, screenings)</option>
+                                    <option value="Chronic Disease Management">Chronic Disease Management (for ongoing conditions like diabetes, hypertension)</option>
+                                    <option value="Minor Procedures">Minor Procedures (wound care, dressing changes, injections)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="display-flex align-items-right">
+                                <input type="submit" class="btn-blue-sm btn-margintop">
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </body>
+
+    <script src="script.js"></script>
+</html>

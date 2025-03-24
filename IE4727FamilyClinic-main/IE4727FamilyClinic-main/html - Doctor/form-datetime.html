@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Health Family Clinic</title>
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body class="container">
+        <section style="margin-top: 100px;">
+            <div class="two-section">
+                <div class="left-col">
+                    <ol class="stepper">
+                        <li class="stepper-done"></li>
+                        <li class="stepper-active"></li>
+                        <li></li>
+                     </ol>
+                    <h2>Choose a date & time slot</h2>
+
+                    <p class="text-mediumgrey">Here are the available slots for:</p>
+
+                    <br>
+
+                    <div class="card display-flex gap-24">
+                        
+                        <img src="images/doctor-profilepic.svg" aria-label="doctor profile picture">
+                      
+                        <div>
+                            <p>
+                                <span class="h4 text-darkblue font-bold"> Dr Jerry Lim </span> <br />
+                                <span class="text-mediumgrey">Family Physician</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="right-col">
+                    <div class="right-col-width">
+                        <form action="#" id="date-time-form">
+
+                            <div class="display-flex" style="justify-content: space-between;">
+                                <div style="width:30%;">
+                                    <select name="month" class="input-style">
+                                        <option value="October 2024">October 2024</option>
+                                        <option value="November 2024">November 2024</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <button id="prev-btn" class="carousel-btn">&lsaquo;</button>
+                                    <button id="next-btn" class="carousel-btn">&rsaquo;</button>
+                                </div>
+                            </div>
+
+                            <div class="padding-2"></div>
+                            
+                            <div class="carousel">
+                                <div class="weekly-date-selector" role="radiogroup">
+                                    <input type="radio" name="weekly-date-selector" id="d1" value="1" checked>
+                                    <label class="weekly-date-item" for="d1">
+                                        <div class="weekly-day">Sun</div>
+                                        <div class="weekly-date">01</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d2" value="2">
+                                    <label class="weekly-date-item" for="d2">
+                                        <div class="weekly-day">Mon</div>
+                                        <div class="weekly-date">02</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d3" value="3">
+                                    <label class="weekly-date-item" for="d3">
+                                        <div class="weekly-day">Tue</div>
+                                        <div class="weekly-date">03</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d4" value="4">
+                                    <label class="weekly-date-item" for="d4">
+                                        <div class="weekly-day">Wed</div>
+                                        <div class="weekly-date">04</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d5" value="5">
+                                    <label class="weekly-date-item" for="d5">
+                                        <div class="weekly-day">Thu</div>
+                                        <div class="weekly-date">05</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d6" value="6">
+                                    <label class="weekly-date-item" for="d6">
+                                        <div class="weekly-day">Fri</div>
+                                        <div class="weekly-date">06</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d7" value="7">
+                                    <label class="weekly-date-item" for="d7">
+                                        <div class="weekly-day">Sat</div>
+                                        <div class="weekly-date">07</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d1" value="1">
+                                    <label class="weekly-date-item" for="d1">
+                                        <div class="weekly-day">Sun</div>
+                                        <div class="weekly-date">01</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d2" value="2">
+                                    <label class="weekly-date-item" for="d2">
+                                        <div class="weekly-day">Mon</div>
+                                        <div class="weekly-date">02</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d3" value="3">
+                                    <label class="weekly-date-item" for="d3">
+                                        <div class="weekly-day">Tue</div>
+                                        <div class="weekly-date">03</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d4" value="4">
+                                    <label class="weekly-date-item" for="d4">
+                                        <div class="weekly-day">Wed</div>
+                                        <div class="weekly-date">04</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d5" value="5">
+                                    <label class="weekly-date-item" for="d5">
+                                        <div class="weekly-day">Thu</div>
+                                        <div class="weekly-date">05</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d6" value="6">
+                                    <label class="weekly-date-item" for="d6">
+                                        <div class="weekly-day">Fri</div>
+                                        <div class="weekly-date">06</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d7" value="7">
+                                    <label class="weekly-date-item" for="d7">
+                                        <div class="weekly-day">Sat</div>
+                                        <div class="weekly-date">07</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d6" value="6">
+                                    <label class="weekly-date-item" for="d6">
+                                        <div class="weekly-day">Fri</div>
+                                        <div class="weekly-date">06</div>
+                                    </label>
+                                    <input type="radio" name="weekly-date-selector" id="d7" value="7">
+                                    <label class="weekly-date-item" for="d7">
+                                        <div class="weekly-day">Sat</div>
+                                        <div class="weekly-date">07</div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="padding-2"></div>
+                            <div class="padding-2"></div>
+                            
+                            <p class="text-mediumgrey">Select Time</p>
+                            <br>
+                            <div class="timing-selector" role="radiogroup">
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM" checked>
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t2" value="08:30 AM">
+                                <label class="timing-item" for="t2">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                <input type="radio" name="timing-selector" id="t1" value="08:30 AM">
+                                <label class="timing-item" for="t1">
+                                    <div class="timing">08:30 AM</div>
+                                </label>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+    </body>
+
+    <script src="script.js"></script>
+</html>

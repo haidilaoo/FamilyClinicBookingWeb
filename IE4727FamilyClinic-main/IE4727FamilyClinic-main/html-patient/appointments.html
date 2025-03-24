@@ -1,0 +1,76 @@
+<!-- not in use -->
+<!-- using appointments.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Family Clinic</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+</head>
+
+<body class="container">
+    <section style="margin-top: 100px">
+        <div>
+            <h2>Appointments</h2>
+            <nav class="nav-appt-container">
+                <ul class="nav-appt">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Upcoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Past</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cancelled</a>
+                    </li>
+                </ul>
+               
+            </nav>
+            
+            <div style="margin-bottom: 40px;"></div>
+            <div id="appointments">
+                <div class="display-flex card" style="justify-content: space-between;" >
+                <div class="display-flex gap-32">
+                    <p class="line-height-24 date-style">
+                        <span>Thursday</span>
+                        <br>
+                        <span><strong>14 Sep 2024</strong></span>
+                    </p>
+
+                    <p class="line-height-24">
+                        <span>General consultation</span>
+                        <br>
+                        <span class="display-flex gap-8 align-items-center">
+                            <img src="../images/icon-clock.svg" width="16px">
+                            <span>12:30 pm</span>
+                        </span>
+                    </p>
+
+                    <div class="display-flex gap-8 align-items-center">
+                        <img src="../images/doctor-profilepic.svg" width="32px">
+                        <p>Dr Jerry Lim</p>
+                    </div>
+                </div>
+                <div class="display-flex gap-16">
+                    <button class="btn-blue-sm">Reschedule</button>
+                    <img src="../images/icon-bin.svg" width="24px">
+                </div>
+            </div>
+
+            </div>
+    </section>
+</body>
+<script src="../appointments.js"></script>
+
+</html>
